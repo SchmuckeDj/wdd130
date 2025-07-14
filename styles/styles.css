@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 16%);
+    background-color: #ddd;
+    color: #000;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -31,6 +47,7 @@ main {
     max-width: 840px;   
 }
 main img {
+    float: right;
     width: 200px;
     height: auto;
 
@@ -45,6 +62,12 @@ aside {
     color: darkblue;
     text-align: center;
     
+    
+}
+aside h2 {
+    position: relative;
+    top: -20px;
+    background-color: #db5757;
 }
 
 aside img {
