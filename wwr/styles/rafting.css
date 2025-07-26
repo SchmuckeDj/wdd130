@@ -14,16 +14,49 @@
 }
 
 body {
+    
     font-family: var(--body-font);
     color: var(--accent1-color);
-   
 }
 
-header,
-main,
-footer {
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+main {
     width: 840px;
     margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    
+    width: 840px;
+    margin: 0 auto;
+    padding: 16px 0;
+    text-align: center;
 }
 
 h1,
@@ -32,7 +65,6 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
 p,
 section,
 article {
@@ -47,21 +79,21 @@ article {
     margin-right: 10px;
 }
 
-
 .hero {
     position: relative;
 }
 
 .hero img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 850px;
+    height: 400px;
+    border-radius: 8px;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
+    width: 101%;
     padding: 16px;
     text-align: center;
     opacity: 0.8;
@@ -71,17 +103,58 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    bottom: 11px;
     right: 20px;
-    width: 40%;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
     padding: 10px;
     border-radius: 8px;
+    height: 35%;
 }
 
 .hero article img {
     float: right;
-    width: 40%;
+    width: 100px;
     margin-left: 10px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.history {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.adventure {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    height: 350px;
+    text-align: center;
+}
+
+.adventure h2 {
+    margin-bottom: 12px;
+}
+
+.adventure figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adventure-images {
+    display: flex;
+    gap: 10px;
+}
+
+.adventure-images img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
 }
