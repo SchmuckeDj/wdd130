@@ -174,3 +174,23 @@ article {
   padding: 0.5rem;
   margin-top: 0.25rem;
 }
+
+.employees {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap; /* para responsive */
+  text-align: center;
+}
+
+.employee {
+  flex: 1;
+  max-width: 300px;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
