@@ -60,6 +60,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    color: var(--accent1-color);
+}
+
 
 
 p,
