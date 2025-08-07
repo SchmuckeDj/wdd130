@@ -65,6 +65,7 @@ footer {
 p,
 section,
 article {
+    color: #264969;
     margin: 16px;
     padding: 8px;
 }
@@ -125,6 +126,10 @@ article {
     border-radius: 8px;
 }
 
+.history p {
+    color: white;
+}
+
 .adventure {
     background-color: var(--accent2-color);
     color: var(--primary-color);
@@ -136,6 +141,7 @@ article {
 
 .adventure h2 {
     margin-bottom: 12px;
+    color:  black;
 }
 
 .adventure figure {
